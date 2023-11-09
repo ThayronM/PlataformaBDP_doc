@@ -14,7 +14,7 @@ Para executar o código principal é necessário que todas as bibliotecas esteja
     pip install -r 'requirements.txt'
 
 ## Classes
-As classes permitem organizar o código promovendo a reutilização, manutenção e torna o código mais legível.
+As classes permitem organizar o código promovendo a reutilização, manutenção e torna o código mais legível. Atualmente, as classes que compõem a plataforma são:
 
 ### Camera
 Destinada desenvolver o script destinado para as funções relacionadas à câmera. Nas competições, a câmera é usada para capturar o jogo em tempo real, portanto é preciso configurar o vídeo que é recebido da câmera para que seja possível segmentar as cores do uniforme, o campo, a bola, posicionamento dos jogadores entre outros.
