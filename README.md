@@ -38,6 +38,6 @@ O código principal é condicionado a todas as classes anteriormente definidas. 
 ## Fluxograma
 Abaixo está o fluxograma de ações que são executadas na janela principal para que a partida seja habilitada com sucesso.
 
-  <img src="Fluxograma.jpeg">
+  <img src="Fluxograma.png">
 
 
