@@ -13,30 +13,52 @@ Para executar o código principal é necessário que todas as bibliotecas esteja
 
     pip install -r 'requirements.txt'
 
+
 ## Classes
-As classes permitem organizar o código promovendo a reutilização, manutenção e torna o código mais legível. Atualmente, as classes que compõem a plataforma são:
+As classes permitem organizar o código promovendo a reutilização, manutenção e torna o código mais legível. Atualmente, as pricipais classes que compõem a plataforma são:
+
+  <img src="Classes.png">
 
 ### Camera
 Destinada desenvolver o script destinado para as funções relacionadas à câmera. Nas competições, a câmera é usada para capturar o jogo em tempo real, portanto é preciso configurar o vídeo que é recebido da câmera para que seja possível segmentar as cores do uniforme, o campo, a bola, posicionamento dos jogadores entre outros.
 
+  <img src="Janela_Camera.png">
+
+
 ### Campo
 Tem como como objetivo desenvolver o script para as funções relacionadas à calibração do campo. O campo de jogo é calibrado de forma a se obter suas dimensões, pontos específicos  e correlacionar os pontos do campo real com o "virtual".
+
+  <img src="Janela_Campo.png">
+
 
 ### Cores
 É feito a segmentação de cores de que serão usadas na competição. As cores possuem finalidades de diferenciar os times, detectar a bola, definir as funções dos jogadores. Para se obter melhores resultados, são feitas calibrações para diminuir ruídos.
 
+  <img src="Janela_cores.png">
+
+
 ### PDI
 O processamento digital de imagens é implementado na Plataforma do BDP para extração e manipulação de imagens digitais ao longo das competições e testes realizados em laboratório. Principais usos são para melhoramento, segmentação e processamento em tempo real das imagens.
+
 
 ### Controle
 Implementada para controle dos jogadores de linha e goleiro. Além disso, é responsável por definir funções de controle pelo joystick, geralmente usado para testes de controle mecânico do robô.
 
+
 ### Main
 O código principal é condicionado a todas as classes anteriormente definidas. Sua execução abre uma janela virtual onde as classes são calibradas e é feito o acompanhamento em tempo real da partida.
 
+  <img src="Janela_inicial.png">
+
+
+A janela após todas as calibrações serem feitas, é a janela da partida habilitada
+
+  <img src="Janela_Partida.png">
+
+
 
 ## Fluxograma
-Abaixo está o fluxograma de ações que são executadas na janela principal para que a partida seja habilitada com sucesso.
+Abaixo está o fluxograma de ações que são executadas na janela principal para que a partida seja habilitada com sucesso. A barra de status é atualizada com as ações a serem feitas, erros que possam ocorrer e dicas sobre o próximo passo a ser feito.
 
   <img src="Fluxograma.png">
 
